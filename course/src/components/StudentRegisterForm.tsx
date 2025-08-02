@@ -312,29 +312,7 @@ export function StudentRegisterForm() {
               )}
             />
 
-            {/* Certificate Checkbox */}
-            <FormField
-              control={form.control}
-              name="certificate"
-              render={({ field }) => (
-                <FormItem className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
-                  <FormControl>
-                    <Checkbox
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                      className="w-5 h-5 text-blue-600"
-                    />
-                  </FormControl>
-                  <div className="space-y-1">
-                    <FormLabel className="text-gray-700 font-medium">Need Certificate?</FormLabel>
-                    <FormDescription className="text-gray-500">
-                      Receive a certificate upon course completion
-                    </FormDescription>
-                  </div>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+          
 
             {/* Submit Button */}
             <Button 

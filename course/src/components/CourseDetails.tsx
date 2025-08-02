@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { courseDetails } from "@/lib/course_data";
+import Link from "next/link";
 
 export default function CourseDetails() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4 md:px-6">
       {/* Main Container */}
-      
-      <div className="max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="w-full mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         
         {/* Hero Section */}
         <div className="bg-white px-6 py-8 md:py-12">
@@ -45,9 +45,11 @@ export default function CourseDetails() {
                   <span className="text-3xl font-bold text-gray-900">{courseDetails.price}</span>
                   <span className="text-lg text-gray-500 line-through">{courseDetails.originalPrice}</span>
                 </div>
-                <button className="w-full sm:w-auto px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-lg transition">
+               <Link href="/registration">
+               <button className="w-full sm:w-auto px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-lg transition">
                   Enroll Now
                 </button>
+               </Link>
               </div>
               <p className="text-xs text-gray-500 mt-2">
                 * Pay only after 7-day free trial if you continue.
@@ -58,7 +60,7 @@ export default function CourseDetails() {
             <div className="md:w-1/3 flex justify-center md:justify-end">
               <div className="w-full max-w-xs">
                 <Image
-                  src="/image.png"
+                  src="/images/course-banner.jpg"
                   alt="Course Banner"
                   width={400}
                   height={300}
