@@ -37,6 +37,7 @@ export default function Header() {
                   Courses
                 </NavigationMenuTrigger>
                 
+                
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
