@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { courseDetails } from "@/lib/course_data";
+import Link from "next/link";
 
 export default function CourseDetails() {
   return (
@@ -45,9 +46,11 @@ export default function CourseDetails() {
                   <span className="text-3xl font-bold text-gray-900">{courseDetails.price}</span>
                   <span className="text-lg text-gray-500 line-through">{courseDetails.originalPrice}</span>
                 </div>
+               <Link href={"/registration"} className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg shadow-lg transition">
                   Enroll Now
                 </button>
+               </Link>
               </div>
               <p className="text-xs text-gray-500 mt-2">
                 * Pay only after 7-day free trial if you continue.
@@ -169,9 +172,11 @@ export default function CourseDetails() {
         <div className="bg-blue-600 text-white text-center py-8 px-6">
           <h2 className="text-2xl font-bold">Start Your Coding Journey Today!</h2>
           <p className="mt-2 opacity-90">Learn in-demand skills with real projects and expert guidance.</p>
+          <Link href={"/registration"} className="inline-block mt-4">
           <button className="mt-6 px-10 py-3 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-gray-100 transition">
             Enroll Now
           </button>
+          </Link>
         </div>
       </div>
     </div>
