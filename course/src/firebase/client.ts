@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 // import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCftrdQMJfD1mTTPVKebbwql4AnIAmryzY",
-  authDomain: "test-60b1e.firebaseapp.com",
-  projectId: "test-60b1e",
-  storageBucket: "test-60b1e.firebasestorage.app",
-  messagingSenderId: "1021559944747",
-  appId: "1:1021559944747:web:ca9b3a8d5464f16ccd9c6e",
-  measurementId: "G-0BHWFGNHBB"
+  apiKey: "AIzaSyD45_Oeq4gpT4I8flOboZlYAI0Qar3A_ME",
+  authDomain: "saancourses.firebaseapp.com",
+  projectId: "saancourses",
+  storageBucket: "saancourses.firebasestorage.app",
+  messagingSenderId: "125772801263",
+  appId: "1:125772801263:web:95cb35a1ed2dcae5fca71a",
+  measurementId: "G-6P1X14XR1M"
 };
 
 // Initialize Firebase
@@ -21,3 +21,6 @@ export const auth = getAuth(app);
 
 export const db = getFirestore(app);
 export const googleprovider =new GoogleAuthProvider()
+
+
+
