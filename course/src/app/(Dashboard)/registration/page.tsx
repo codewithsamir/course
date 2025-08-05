@@ -1,7 +1,5 @@
 import { StudentRegisterForm } from "@/components/StudentRegisterForm";
-import { Navigation } from "@/components/Navigation";
-import Link from "next/link";
-import { BookOpen, ArrowRight } from "lucide-react";
+
 import Image from "next/image";
 
 export default function RegisterPage() {
