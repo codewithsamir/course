@@ -99,10 +99,10 @@ const AuthForm = ({ type }: AuthFormProps) => {
       const result = await signInWithPopup(auth, googleprovider)
       const user = result.user
       const idToken = await user.getIdToken()
-console.log(user)
-console.log(idToken)
+
 
    const response = await signUpWithGoogle({
+    idToken,
       uid: user.uid,
       name: user.displayName ?? "",
       email: user.email ?? ""
@@ -122,15 +122,8 @@ console.log(idToken)
   }
 
   return (
-    <div className="max-w-md w-full mx-auto p-8 bg-card rounded-2xl shadow">
-      <div className="flex flex-col items-center gap-2 mb-8">
-        <div className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Logo" width={36} height={32} />
-          <Brain className="text-primary-200" size={32} />
-        </div>
-        <span className="text-lg font-bold tracking-tight text-primary-200">codewithsamir</span>
-        <span className="text-sm text-muted-foreground text-center">AI interview platform</span>
-      </div>
+    <div className="max-w-md w-full mx-auto mt-12 p-8 bg-card rounded-2xl shadow">
+     
 
       <Toaster position="top-center" richColors />
 
