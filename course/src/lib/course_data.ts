@@ -5,7 +5,7 @@ export const courseDetails = {
   startDate: "2025-08-20",
   price: "Rs. 4,999/- only",
   freeTrial: "7 Days Free Class",
-  duration: "2 Months",
+  duration: "3 Months",
   liveMode: true,
   time: "Every Evening 8 PM",
   description:
